@@ -6,7 +6,7 @@
 
 ## Abstract
 
-Many cities responded to COVID-era crime trends by reorganizing policing budgets and policies on the assumption that the pandemic caused a discrete break in how crime occurred. Using 25 years of Chicago crime data (2001–2026, ~8.5 million reported incidents across 25 FBI categories), this project tests that assumption: did Chicago's crime composition — the mix of crime types reported each month — actually shift at the pandemic, or were the changes that look like a COVID shock already underway?
+Many cities responded to COVID-era crime trends by reorganizing policing budgets and policies on the assumption that the pandemic caused a discrete break in how crime occurred. Using 25 years of Chicago crime data (2001–2026, ~8.5 million reported incidents across 25 FBI categories), this project tests that assumption: did Chicago's crime composition, the mix of crime types reported each month, actually shifted during the pandemic, or were the changes that look like a COVID shock already underway?
 
 The data shows the latter. Four independent statistical methods all point to gradual compositional evolution rather than a discrete pandemic-era regime shift. The largest post-pandemic changes trace to the multi-year decline of drug-enforcement categories, not to the pandemic itself.
 
@@ -16,7 +16,7 @@ The data shows the latter. Four independent statistical methods all point to gra
 
 - **The largest post-2020 changes are tail-of-trend, not shock.** Drug Abuse Violations declined steadily from a 2008 peak; the post-COVID share is the continuation of a 15-year trajectory. Liquor Laws broke structurally in 2015, five years before COVID. Only three of 24 categories show a clean single-break point under Zivot-Andrews testing.
 
-- **The dependence structure between crime types shifted across eras, but the mechanism is compositional, not behavioral.** Drug Abuse Violations and Liquor Laws — both high-share, declining categories — drive most of the cross-era correlation shifts. As they shrank, the negative correlations they mechanically imposed on other categories' shares weakened. This is compositional pressure release, not new criminal patterns forming.
+- **The dependence structure between crime types shifted across eras, but the mechanism is compositional, not behavioral.** Drug Abuse Violations and Liquor Laws are both high-share, declining categories that drive most of the cross-era correlation shifts. As they shrank, the negative correlations they mechanically imposed on other categories' shares weakened. This is compositional pressure release, not the formation of new criminal patterns.
 
 ## Methods Used
 
