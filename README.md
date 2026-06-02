@@ -2,7 +2,7 @@
 
 > Testing whether Chicago's crime composition broke at COVID, or whether the changes that look like a COVID shock were already underway.
 
-![PC1 trajectory with changepoint methods](figures/z-score_heatmap.png)
+![PC1 trajectory with changepoint methods](figures/regime_segmentation.png)
 
 ## Abstract
 
