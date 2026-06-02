@@ -1771,7 +1771,7 @@ def plot_era_heatmaps(data_dict, stat_type='mean', image_path=None, image_name=N
 # ---------------------------------------------------------------------------
 def plot_pc_scores_over_time(
     pca_dict: dict,
-    panel_index: pd.DatetimeIndex,
+    data_index: pd.DatetimeIndex,
     era_config: dict = None,
     n_components: int = 3,
     figsize: tuple = (14, 12),
@@ -1798,16 +1798,16 @@ def plot_pc_scores_over_time(
     coords, ratios = pca_dict['coords_norm'], pca_dict['variance_ratio']
     n_components = min(n_components, coords.shape[1])
     
-    # Validate that panel_index length matches the number of observations in coords
-    if len(panel_index) != coords.shape[0]:
-        raise ValueError(f"panel_index length ({len(panel_index)}) != observations ({coords.shape[0]})")
+    # Validate that data_index length matches the number of observations in coords
+    if len(data_index) != coords.shape[0]:
+        raise ValueError(f"data_index length ({len(data_index)}) != observations ({coords.shape[0]})")
 
     # ------------------------------------------------------------
     # 8-3: Prepare the scores DataFrame for plotting
     # ------------------------------------------------------------
     scores = pd.DataFrame(
         coords[:, :n_components],
-        index=pd.DatetimeIndex(panel_index),
+        index=data_index,
         columns=[f'PC{i+1}' for i in range(n_components)]
     ).sort_index()
 
