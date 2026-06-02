@@ -42,7 +42,7 @@ The data shows the latter. Four independent statistical methods all point to gra
 
 - **Reporting lag** — The Chicago Data Portal backfills recent months. April 2026 data is partly affected; the post-COVID tail should be interpreted with this in mind.
 - **Enforcement vs. occurrence** — Reported counts measure police activity, not crime occurrence. For enforcement-driven categories (drug abuse, vice, weapons, liquor laws), counts reflect enforcement priorities. Because CLR shares are compositionally coupled, shifts in enforcement of high-share categories propagate to every other category's share statistics.
-- **Compositional vs. absolute** — All findings describe changes in *relative* crime composition, not changes in absolute incident counts.
+- **Compositional vs. absolute** - All findings describe changes in *relative* crime composition, not changes in absolute incident counts.
 - **Ward analysis omitted** — The Ward field contained an ETL sentinel (many incidents tagged to Ward 50). See the notebook diagnostics in `notebook/ChicagoCrimeDetection.ipynb` for details on the Ward 50 artifact and why the Ward section was removed.
 
 ## What I'd Do Next
