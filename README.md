@@ -2,7 +2,7 @@
 
 > Testing whether Chicago's crime composition broke at COVID, or whether the changes that look like a COVID shock were already underway.
 
-![PC1 trajectory with changepoint methods](figures/regime_segmentation.png)
+![PC1 trajectory with changepoint methods](figures/z-score_heatmap.png)
 
 ## Abstract
 
@@ -55,26 +55,39 @@ The data shows the latter. Four independent statistical methods all point to gra
 
 ```
 ChicagoCrimeCompositionAnalysis/
-├── doc
+├── doc/
 │   ├── ChicagoCrime_Summary.docx
-│   └── ChicagoCrime_Summary.pdf 
-├── README.md                              # this file
-├── requirements.txt                       # Python dependencies for the project
-├── raw_requirements.txt                   # Pip freeze
+│   └── ChicagoCrime_Summary.pdf
+├── README.md
+├── requirements.txt
+├── raw_requirements.txt
 ├── data/
-│   └── crime_data.feather                 # primary dataset (feather format)
+│   └── crime_data.feather
 ├── figures/
-│   └── regime_segmentation.png            # headline figure (also embedded in this README)
+│   ├── z-score_heatmap.png
+│   ├── count_fbi_code_desc_year_count_line_plot.png
+│   └── (other PNG figures)
 ├── modules/
-│   ├── clr_analyze_plot.py                # analysis & plotting helpers
-│   ├── clr_config.py                      # era boundaries, constants, config
-│   ├── clr_eps_grid.py                    # epsilon grid generation & sweep
-│   ├── clr_era.py                         # era slicing, distribution & PCA workflows
-│   ├── clr_pca_sign_normalization.py      # PCA sign-normalization helpers
-│   └── clr_utilities.py                   # data aggregation, panel filling, integrity checks
+│   ├── clr_analyze_plot.py
+│   ├── clr_config.py
+│   ├── clr_eps_grid.py
+│   ├── clr_era.py
+│   ├── clr_pca_sign_normalization.py
+│   ├── clr_utilities.py
+│   ├── crime_plot.py
+│   ├── crime_utilities.py
+│   └── zscore_anomaly.py
 └── notebook/
-    └── ChicagoCrimeDetection.ipynb        # main analytical notebook
+    ├── ChicagoCrimeDetection.ipynb
+    └── ChicagoCrimeVisualize.ipynb
 ```
+
+## Additional Information
+
+- **Data source:** The primary dataset is the Chicago Data Portal crime extract, provided here as `data/crime_data.feather`. Users should consult the Chicago Data Portal terms of use for data licensing and attribution requirements.
+- **License:** The repository does not include an explicit license file. Data are subject to Chicago Data Portal terms; code in this repo is provided for research and reproducibility. Add a `LICENSE` file to specify a preferred code license (e.g., MIT) if redistribution is intended.
+- **Contact / Issues:** Open an issue on the repository's GitHub page to report problems, request features, or ask questions.
+- **Last updated:** 2026-06-02
 
 ## Quickstart
 
