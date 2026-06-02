@@ -57,7 +57,7 @@ The data shows the latter. Four independent statistical methods all point to gra
 ChicagoCrimeCompositionAnalysis/
 ├── doc
 │   ├── ChicagoCrime_Summary.docx
-│   ├── ChicagoCrime_Summary.pdf 
+│   └── ChicagoCrime_Summary.pdf 
 ├── README.md                              # this file
 ├── requirements.txt                       # Python dependencies for the project
 ├── raw_requirements.txt                   # Pip freeze
