@@ -60,6 +60,7 @@ ChicagoCrimeCompositionAnalysis/
 │   ├── ChicagoCrime_Summary.pdf 
 ├── README.md                              # this file
 ├── requirements.txt                       # Python dependencies for the project
+├── raw_requirements.txt                   # Pip freeze
 ├── data/
 │   └── crime_data.feather                 # primary dataset (feather format)
 ├── figures/
